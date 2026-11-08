@@ -1,0 +1,138 @@
+## SemiClassical-Gravity 1.3.2 VERSION (newest)
+
+Follow 'PROTOCOL.md' in this project's knowledge. Stop at each logically complete unit and wait for my approval before continuing.
+
+Project file roles:
+'PROTOCOL.md' - Workflow procedures: checkpoint report, change preservation, git tags, handoff, audit, testing
+'STATUS.md' - Current state: checkpoint table and short decision/blocker log. Read first every chat
+'CONTEXT.md' - Static technical facts per app: SDKs, libraries, architecture. Read before writing code
+'HANDOFF.md' - Chat-only context from the previous chat. Exists only after /handoff, replaced each time
+'.git' - History, tags and diffs. Claude can't run git, so the user pastes the output
+'docs/' - User-written documentation, specs, UI examples and sprites. Not always present, opened only when the task references it
+
+Confirm you're in the connected project directory before writing. Check the actual files before acting: read only what the task needs, batch reads, and locate first (search, or list just the folder you need). Read any file you haven't read this session before editing it, and don't re-read one you already read unless I say I edited it. Never read build/, .gradle/ or generated output. Prefer targeted edits over full-file overwrites, combine edits into one edit_file call, and skip dry runs and read-backs for small edits. Don't print whole files in chat.
+
+In a new or relayed chat, run the PROTOCOL §5 audit before writing any code, and wait for my approval.
+
+
+## SemiClassical-Gravity 1.3.1 VERSION
+
+Follow 'PROTOCOL.md' in this project's knowledge.
+
+Project file roles:
+'PROTOCOL.md' - Workflow procedures: checkpoint report, change preservation, git tags, handoff, audit, testing
+'STATUS.md' - Current state: checkpoint table and short decision/blocker log. Read first every chat
+'CONTEXT.md' - Static technical facts per app: SDKs, libraries, architecture. Read before writing code
+'HANDOFF.md' - Chat-only context from the previous chat. Exists only after /handoff, replaced each time
+'.git' - History, tags and diffs. Claude can't run git, so the user pastes the output
+'docs/' - User-written documentation, specs, UI examples and sprites. Not always present, opened only when the task references it
+
+You have filesystem access to the project repo. Confirm you're in the connected project directory before writing. Check the actual files before acting: read only what the task needs, batch reads, and locate first (search, or list just the folder you need). Read any file you haven't read this session before editing it, and don't re-read one you already read unless I say I edited it. Never read build/, .gradle/ or generated output. Prefer targeted edits over full-file overwrites, combine edits into one edit_file call, and skip dry runs and read-backs for small edits. Don't print whole files in chat.
+
+Never implement continuously toward an arbitrary endpoint. Stop at each
+logically complete unit and produce a checkpoint report (what changed,
+how to test it, known issues, recommended next). Wait for explicit
+user approval before continuing.
+
+Before deleting or substantially rewriting existing code, state what
+it currently does, why it's changing, and what behavior must be
+preserved. Do not treat "clean up" as license to remove functionality
+without this justification.
+
+If you are starting in a new or relayed chat: before writing any code,
+audit per PROTOCOL §5 and STATUS.md/HANDOFF.md against each
+other, report discrepancies, and wait for user approval before
+proceeding.
+
+
+## SemiClassical-Gravity 1.3 VERSION
+
+Follow 'PROTOCOL.md' in this project's knowledge.
+
+Project file roles:
+'PROTOCOL.md' - Workflow procedures: checkpoint report, change preservation, git tags, handoff, audit, testing
+'STATUS.md' - Current state: checkpoint table and short decision/blocker log. Read first every chat
+'CONTEXT.md' - Static technical facts per app: SDKs, libraries, architecture. Read before writing code
+'HANDOFF.md' - Chat-only context from the previous chat. Exists only after /handoff, replaced each time
+'.git' - History, tags and diffs. Claude can't run git, so the user pastes the output
+'docs/' - User-written documentation, specs, UI examples and sprites. Not always present, opened only when the task references it
+
+You have filesystem access to the project repo. Check the actual files before acting, and re-read anything you didn't read this session before editing it. Confirm you're in the connected project directory before writing. Prefer targeted edits over full-file overwrites.
+
+Before deleting or substantially rewriting existing code, state what
+it currently does, why it's changing, and what behavior must be
+preserved. Do not treat "clean up" as license to remove functionality
+without this justification.
+
+If you are starting in a new or relayed chat: before writing any code,
+audit per PROTOCOL §5 and STATUS.md/HANDOFF.md against each
+other, report discrepancies, and wait for user approval before
+proceeding.
+
+
+## SemiClassical-Gravity 1.2 VERSION
+
+Follow 'PROTOCOL.md' in this project's knowledge.
+
+Project file roles:
+'PROTOCOL.md' - Workflow procedures: checkpoint report, change preservation, git tags, handoff, audit, testing
+'STATUS.md' - Current state: checkpoint table and short decision/blocker log. Read first every chat
+'CONTEXT.md' - Static technical facts per app: SDKs, libraries, architecture. Read before writing code
+'HANDOFF.md' - Chat-only context from the previous chat. Exists only after /handoff, replaced each time
+'.git' - History, tags and diffs. Claude can't run git, so the user pastes the output
+'docs/' - User-written documentation, specs, UI examples and sprites. Not always present, opened only when the task references it
+
+You have filesystem access to the project repo. Check the actual files before acting, and re-read anything you didn't read this session before editing it. Confirm you're in the connected project directory before writing. Prefer targeted edits over full-file overwrites.
+
+Never implement continuously toward an arbitrary endpoint. Stop at each
+logically complete unit and produce a checkpoint report (what changed,
+how to test it, known issues, recommended next). Wait for explicit
+user approval before continuing.
+
+Before deleting or substantially rewriting existing code, state what
+it currently does, why it's changing, and what behavior must be
+preserved. Do not treat "clean up" as license to remove functionality
+without this justification.
+
+If you are starting in a new or relayed chat: before writing any code,
+audit per PROTOCOL §5 and STATUS.md/HANDOFF.md against each
+other, report discrepancies, and wait for user approval before
+proceeding.
+
+
+## 1.1 VERSION
+
+Follow 'PROTOCOL.md' in this project's knowledge.
+
+Project file roles:
+'PROTOCOL.md' - Workflow procedures: checkpoint report, change preservation, git tags, handoff, audit, testing
+'STATUS.md' - Current state: checkpoint table and short decision/blocker log. Read first every chat
+'CONTEXT.md' - Static technical facts per app: SDKs, libraries, architecture. Read before writing code
+'HANDOFF.md' - Chat-only context from the previous chat. Exists only after /handoff, replaced each time
+'.git' - History, tags and diffs. Claude can't run git, so the user pastes the output
+'docs/' - User-written documentation, specs, UI examples and sprites. Not always present, opened only when the task references it
+
+You have filesystem access to the local project repository — you can
+read, list, and edit real project files directly, not just what's
+pasted in chat. This does not mean you already know the current
+state: check the actual files before acting, especially before a
+Handoff Audit or before editing anything you didn't just read this
+session. Confirm you're working within the connected project
+directory before writing. Prefer precise, targeted edits over
+full-file overwrites — an overwrite replaces the entire file
+silently, so use it deliberately, not by default.
+
+Never implement continuously toward an arbitrary endpoint. Stop at each
+logically complete unit and produce a checkpoint report (what changed,
+how to test it, known issues, recommended next). Wait for explicit
+user approval before continuing.
+
+Before deleting or substantially rewriting existing code, state what
+it currently does, why it's changing, and what behavior must be
+preserved. Do not treat "clean up" as license to remove functionality
+without this justification.
+
+If you are starting in a new or relayed chat: before writing any code,
+audit per PROTOCOL §5 and STATUS.md/HANDOFF.md against each
+other, report discrepancies, and wait for user approval before
+proceeding.
